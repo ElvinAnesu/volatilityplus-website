@@ -11,10 +11,10 @@ export default function Banner() {
       </div>
       {/* Main title */}
       
-      <h2 className="text-3xl md:text-6xl font-bold mb-6 text-white leading-tight">
+      <h1 className="text-4xl md:text-7xl font-extrabold mb-6 text-white leading-tight">
         Best <span className="text-yellow-400">Boom & Crash</span> Signals-
         <br className="hidden md:block" /> <span className="text-yellow-400">PainX GainX</span> Alerts
-      </h2>
+      </h1>
       {/* Subtitle/description */}
       <p className="max-w-2xl text-sm md:text-base text-zinc-200/90 leading-relaxed mb-10">
         Get 80% accurate Boom & Crash trading signals, PainX & GainX spike alerts, 

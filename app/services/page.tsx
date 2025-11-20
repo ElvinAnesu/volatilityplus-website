@@ -26,11 +26,11 @@ export default function ServicesPage() {
     <div className="bg-gradient-to-b from-black via-zinc-900 to-zinc-800 min-h-screen font-sans">
       <Navbar />
       <section className="py-20 px-4 max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-7 text-white text-center">Our Services</h2>
+        <h2 className="text-3xl md:text-5xl font-bold mb-7 text-white text-center">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {services.map((svc, i) => (
             <div key={i} className="rounded-2xl border border-yellow-400 glassy bg-black/80 p-8 flex flex-col shadow-xl">
-              <div className="text-yellow-400 text-2xl font-bold mb-2">{svc.name}</div>
+              <h3 className="text-yellow-400 text-xl md:text-2xl font-bold mb-2">{svc.name}</h3>
               <div className="text-base md:text-lg text-zinc-200 mb-2">{svc.desc}</div>
             </div>
           ))}

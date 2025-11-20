@@ -57,7 +57,7 @@ const pricingPlans = [
 export default function PricingPlans() {
   return (
     <section className="py-20 px-4 flex flex-col items-center w-full bg-gradient-to-b from-black via-zinc-900 to-zinc-800">
-      <h2 className="text-5xl font-bold mb-10 text-center text-white">Choose Your <span className="text-yellow-400">Plan</span></h2>
+      <h2 className="text-3xl md:text-5xl font-bold mb-10 text-center text-white">Choose Your <span className="text-yellow-400">Plan</span></h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-7xl">
         {pricingPlans.map((plan, idx) => (
           <div key={plan.name} className={`relative bg-black bg-opacity-80 glassy rounded-3xl border ${plan.accent} flex flex-col p-8 items-center shadow-2xl min-h-[540px]`}> 
@@ -67,7 +67,7 @@ export default function PricingPlans() {
                 {plan.tag.label}
               </div>
             )}
-            <div className="font-bold text-3xl text-white text-center mb-2">{plan.name}</div>
+            <h3 className="font-bold text-xl md:text-2xl text-white text-center mb-2">{plan.name}</h3>
             <div className="mb-6 text-white text-center text-lg font-normal opacity-80">{plan.description}</div>
               <div className="flex flex-col items-start mb-10 w-full">
                 {plan.features.map((feature, i) => (
@@ -77,7 +77,7 @@ export default function PricingPlans() {
                   </div>
                 ))}
               </div>
-            <div className="mb-2 text-5xl font-extrabold text-yellow-400 flex items-end">{plan.price}<span className="text-2xl text-white font-medium ml-1">{plan.period}</span></div>
+            <div className="mb-2 text-4xl md:text-5xl font-extrabold text-yellow-400 flex items-end">{plan.price}<span className="text-2xl text-white font-medium ml-1">{plan.period}</span></div>
             <button className={`mt-6 w-full text-center font-bold text-lg py-3 rounded-full shadow-md transition-colors ${plan.btnColor} text-white`}>Subscribe</button>
           </div>
         ))}

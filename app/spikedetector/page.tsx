@@ -7,7 +7,7 @@ export default function SpikeDetectorPage() {
     <div className="bg-gradient-to-b from-black via-zinc-900 to-zinc-800 min-h-screen font-sans">
       <Navbar />
       <section className="max-w-4xl mx-auto py-20 px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-yellow-400 text-center">Spike Phantom Detector V3.0</h2>
+        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-yellow-400 text-center">Spike Phantom Detector V3.0</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
           <div className="bg-black/90 rounded-2xl border border-yellow-400 p-8 glassy flex flex-col justify-center shadow-xl">
             <h3 className="text-xl md:text-2xl font-bold text-white mb-3">What is Spike Detector?</h3>
@@ -20,7 +20,7 @@ export default function SpikeDetectorPage() {
             </ul>
           </div>
           <div className="bg-zinc-900/90 rounded-2xl border border-yellow-400 p-8 glassy flex flex-col items-center shadow-xl justify-center">
-            <div className="text-yellow-400 text-4xl font-bold mb-3">$50</div>
+            <div className="text-yellow-400 text-3xl md:text-4xl font-bold mb-3">$50</div>
             <div className="text-white text-lg mb-3">Unlock lifetime access to Spike Detector V3.0 and maximize your advantage today.</div>
             <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-lg px-10 py-3 rounded-full shadow border-2 border-yellow-400 transition-colors">Buy Now</button>
           </div>

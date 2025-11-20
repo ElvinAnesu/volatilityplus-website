@@ -9,6 +9,8 @@ const paymentOptions = [
 ];
 
 export default function GetStarted() {
+  // Duplicate array for seamless looping
+  const displayOptions = [...paymentOptions, ...paymentOptions];
   return (
     <section className="bg-black w-full py-20 flex flex-col items-center justify-center border-t border-zinc-800">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white leading-tight">
@@ -25,12 +27,27 @@ export default function GetStarted() {
           Create Free Account
         </a>
       </div>
-      <div className="flex items-center justify-center gap-8 mt-6">
-        {paymentOptions.map((p, i) => (
-          <span key={i} className="flex items-center gap-2 text-zinc-200 text-sm md:text-base">
-            <span className="inline-block align-middle text-2xl">{p.icon}</span> {p.label}
-          </span>
-        ))}
+      {/* Marquee payment options */}
+      <div
+        className="relative w-full flex justify-center"
+      >
+        <div
+          className="overflow-hidden w-[260px] md:w-[600px]"
+        >
+          <div
+            className="flex gap-8 animate-marquee whitespace-nowrap"
+            style={{ animationDuration: "18s" }}
+          >
+            {displayOptions.map((p, i) => (
+              <span
+                key={i}
+                className="flex items-center gap-2 text-zinc-200 text-sm md:text-base min-w-[80px] md:min-w-[120px]"
+              >
+                <span className="inline-block align-middle text-2xl">{p.icon}</span> {p.label}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
