@@ -8,16 +8,17 @@ const navLinks = [
   {
     name: "Services",
     dropdown: [
-      { name: "Affiliate", href: "#" },
-      { name: "VIP Broker", href: "#" },
-      { name: "Signals", href: "#" }
+      { name: "Affiliate", href: "/services/affiliate" },
+      { name: "VIP Broker", href: "/services/vip-broker" },
+      { name: "Signals", href: "/services/signals" },
+      { name: "MQL5 Development", href: "/services/mql5-development" }
     ]
   },
   {
     name: "Trading Tools",
     dropdown: [
-      { name: "Spike Phantom", href: "#" },
-      { name: "Megaspike Max", href: "#" }
+      { name: "Spike Phantom", href: "/tools/spikephantom" },
+      { name: "Megaspike Max", href: "/tools/mega-spike/" }
     ]
   },
   { name: "Testimonials", href: "/testimonies" },

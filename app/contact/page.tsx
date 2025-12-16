@@ -14,12 +14,6 @@ export default function ContactPage() {
           <input type="email" placeholder="Your Email" className="bg-transparent border border-yellow-400/70 rounded-lg px-5 py-3 text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-yellow-400/80 transition-all duration-300" />
           <textarea placeholder="Your Message" rows={5} className="bg-transparent border border-yellow-400/70 rounded-lg px-5 py-3 text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-yellow-400/80 transition-all duration-300"></textarea>
           <button type="submit" className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-8 py-3 rounded-full shadow border-2 border-yellow-400 transition-transform duration-300 hover:scale-105">Send Message</button>
-          <div className="grid sm:grid-cols-2 gap-4 pt-4 border-t border-white/10 text-zinc-200">
-            <div><span className="font-bold text-yellow-400">Email:</span> Contact@VolatilityPlus.com</div>
-            <div><span className="font-bold text-yellow-400">Telegram:</span> @VolatilityPlus</div>
-            <div><span className="font-bold text-yellow-400">Discord:</span> VolatilityPlus#2025</div>
-            <div><span className="font-bold text-yellow-400">WhatsApp:</span> +13526770586</div>
-          </div>
         </form>
       </section>
       <Footer />
